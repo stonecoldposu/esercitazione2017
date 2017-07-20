@@ -7,6 +7,17 @@
     <link href='css/bootstrap.min.css' rel='stylesheet' media='screen'>
     <script src="js/jquery-1.10.1.js"></script>
     <script src="js/bootstrap.js"></script>
+	<style>
+	   body{
+		   padding: 2%;
+	   }
+	   .jumbotron{
+		   background-color: rgb(240,173,78);
+	   }
+	   .testocarousel{
+		   font: italic bold 30px Georgia, serif;
+	   }
+	</style>
   </head>
   <body>
   
@@ -40,30 +51,63 @@
 	</div>
   </nav>
   
+  <div class="jumbotron">
+    <div class="container">
+	  <div class="row">
+	    <div class="col-sm-4 hidden-xs">
+		   <img src="foto/glem.png" class="img img-responsive img-thumbnail"/>
+		</div>
+		<div class="col-sm-8">
+			<h1>Compro tutto</h1>
+			<h2>Tutto quello che cerchi, a prezzi imbattibili</h2>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="carousel slide col-sm-offset-1 hidden-xs" data-ride="carousel">
+	  <div class="carousel-inner testocarousel">
+	    <div class="item active"> Frigoriferi </div>
+		<div class="item"> Piani cottura </div>
+		<div class="item"> Cappe da arredamento </div>
+		<div class="item"> Lavelli </div>
+	  </div>
+	</div>
+  </div>
+  
   <div class="container">
-  <br><br><br><br><br><br>
+  <br><br>
   <h1>Registrati</h1>
   <div class="row">
     <form action="do_registra.php" method="post" class="form-horizontal">
 	   <div class="form-group">
 	     <label for="email" class="col-sm-4 control-label">E-mail</label>
-		 <input type="email" id="email" required class="form-control" placeholder="Inserisci il tuo indirizzo e-mail">
+		 <div class="col-sm-8">
+		 <input name="email" type="email" id="email" required class="form-control" placeholder="Inserisci il tuo indirizzo e-mail">
+		 </div>
 	   </div>
 	   <div class="form-group">
 	     <label for="nome" class="col-sm-4 control-label">Nome</label>
-		 <input type="text" id="nome" required class="form-control" placeholder="Es. Mario">
+		 <div class="col-sm-8">
+		 <input name="nome" type="text" id="nome" required class="form-control" placeholder="Es. Mario">
+		 </div>
 	   </div>
 	   <div class="form-group">
 	     <label for="cognome" class="col-sm-4 control-label">Cognome</label>
-		 <input type="text" id="cognome" required class="form-control" placeholder="Es. Rossi">
+		 <div class="col-sm-8">
+		 <input name="cognome" type="text" id="cognome" required class="form-control" placeholder="Es. Rossi">
+		 </div>
 	   </div>
 	   <div class="form-group">
 	     <label for="pwd" class="col-sm-4 control-label">Password</label>
-		 <input type="password" id="pwd" required class="form-control" placeholder="Inserisci la password">
+		 <div class="col-sm-8">
+		 <input name="password" type="password" id="pwd" required class="form-control" placeholder="Inserisci la password">
+		 </div>
 	   </div>
 	   <div class="form-group">
-	     <button type="submit" class="btn btn-warning col-sm-offset-4 col-sm-3">
+		 <div class="col-sm-offset-4 col-sm-6">
+	     <button type="submit" class="btn btn-warning">
 		 Registrati</button>
+		 </div>
 	   </div>
 	</form>
   </div>  
